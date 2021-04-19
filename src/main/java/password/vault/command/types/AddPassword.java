@@ -21,8 +21,8 @@ import java.util.List;
 public class AddPassword implements Command {
     private static final int STATUS_CODE_COMPROMISED = 200;
     private static final String API_URL = "https://api.enzoic.com";
-    private static final String API_KEY = "522784f568f44743946a36c93ecf9528";
-    private static final String API_SECRET = "GmKQmFq$7Xr5$_2Ha=c-XR?fW*E3d+44";
+    private static final String API_KEY = System.getenv("API_KEY");
+    private static final String API_SECRET = System.getenv("API_SECRET");
     private static final int NUMBER_OF_ARGUMENTS = 4;
     private static final int WEBSITE_INDEX = 1;
     private static final int USER_INDEX = 2;
